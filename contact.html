@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us — RebaMotaki Consultants</title>
+  <meta name="description" content="Contact RebaMotaki Consultants for ISO, B-BBEE, Skills Development and Compliance services." />
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="brochure">
+
+  <!-- ================= HEADER ================= -->
+  <header class="hero-header small">
+    <div class="hero-inner container">
+
+      <!-- Brand -->
+      <a href="index.html" class="brand-left">
+        <img src="assets/image1.png" alt="RebaMotaki Consultants Logo" class="brand-logo">
+        <div>
+          <strong class="brand-title">RebaMotaki Consultants</strong>
+          <div class="brand-sub">Compliance • ISO • B-BBEE • Skills</div>
+        </div>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="services.html" class="nav-item">Services</a>
+        <a href="contact.html" class="nav-item active">Contact</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+
+        <!-- Mobile menu button -->
+        <button id="mobileMenuBtn7"
+                class="mobile-menu"
+                aria-label="Toggle menu">
+          ☰
+        </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="container content">
+
+    <!-- Contact Intro -->
+    <section class="card">
+      <h1>Contact Us</h1>
+      <p class="muted">
+        Get in touch with RebaMotaki Consultants to discuss your compliance,
+        ISO certification, B-BBEE or skills development needs.
+      </p>
+    </section>
+
+    <!-- Contact Layout -->
+    <section class="card">
+      <div class="section-row">
+
+        <!-- ===== Contact Form ===== -->
+        <div class="col">
+
+          <h2>Send us an enquiry</h2>
+
+          <form class="contact-form"
+                onsubmit="return handleContact(event)"
+                novalidate>
+
+            <label>
+              Company Name
+              <input type="text" id="company" placeholder="e.g. ABC Construction">
+            </label>
+
+            <label>
+              Full Name <span aria-hidden="true">*</span>
+              <input type="text" id="name" required placeholder="Your full name">
+            </label>
+
+            <label>
+              Email Address <span aria-hidden="true">*</span>
+              <input type="email" id="email" required placeholder="you@company.co.za">
+            </label>
+
+            <label>
+              Phone Number
+              <input type="tel" id="phone" placeholder="+27 79 299 5681">
+            </label>
+
+            <label>
+              Sector
+              <select id="sector">
+                <option value="Construction">Construction</option>
+                <option value="ICT">ICT</option>
+                <option value="Transport">Transport</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+
+            <label>
+              Message
+              <textarea id="message"
+                        rows="6"
+                        placeholder="Briefly describe how we can assist you"></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-gold">
+                Send Enquiry
+              </button>
+
+              <a href="mailto:hello@rebamotaki.co.za"
+                 class="btn btn-outline">
+                Email Directly
+              </a>
+            </div>
+
+            <div id="formResult" class="muted small" role="status" aria-live="polite"></div>
+          </form>
+
+        </div>
+
+        <!-- ===== Contact Details ===== -->
+        <div class="col right">
+
+          <h2>Contact Details</h2>
+
+          <table class="info-table">
+            <tr>
+              <th>Company</th>
+              <td>RebaMotaki Consultants</td>
+            </tr>
+            <tr>
+              <th>Address</th>
+              <td>
+                403 Ben Viljoen Street<br>
+                Pretoria North<br>
+                0182, South Africa
+              </td>
+            </tr>
+            <tr>
+              <th>Phone</th>
+              <td>+27 79 299 5681</td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td>
+                <a href="mailto:hello@rebamotaki.co.za">
+                  hello@rebamotaki.co.za
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th>Website</th>
+              <td>
+                <a href="https://www.rebamotaki.co.za" target="_blank" rel="noopener">
+                  www.rebamotaki.co.za
+                </a>
+              </td>
+            </tr>
+          </table>
+
+          <div style="margin-top:16px" class="muted small">
+            Office hours: Monday – Friday, 08:00 – 17:00
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© RebaMotaki Consultants</div>
+      <div class="muted">
+        403 Ben Viljoen Street, Pretoria North • +27 79 299 5681 • hello@rebamotaki.co.za
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
