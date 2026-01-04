@@ -6,6 +6,7 @@
 :root{
   --bg:#f5f6f7;
   --paper:#ffffff;
+
   --gold:#c79a3b;
   --teal:#0a6f73;
   --teal-dark:#064e50;
@@ -73,9 +74,11 @@ body{
   background:rgba(255,255,255,0.08);
 }
 
+/* ✅ LOGO TEXT — NORMAL, VIEWABLE SIZE */
 .brand-title{
-  font-size:1.4rem;
-  font-weight:800;
+  font-size:1.05rem;
+  font-weight:600;
+  line-height:1.2;
 }
 
 .brand-sub{
