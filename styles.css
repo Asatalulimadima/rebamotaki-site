@@ -1,6 +1,5 @@
 /* =========================================================
-   Premium Brochure Style — UPDATED
-   Executive, visible, print-ready
+   Premium Brochure Style — FIXED & MOBILE-SAFE
 ========================================================= */
 
 :root{
@@ -87,7 +86,7 @@ body{
 }
 
 /* --------------------
-   Navigation
+   Navigation (Desktop)
 -------------------- */
 .main-nav{
   display:flex;
@@ -126,7 +125,8 @@ body{
   background:none;
   border:none;
   cursor:pointer;
-  color:var(--ink);
+  color:#fff;
+  z-index:1001;
 }
 
 /* --------------------
@@ -139,71 +139,10 @@ body{
   padding:48px 24px;
 }
 
-.hero-copy h2{
-  font-family:var(--serif);
-  font-size:2.2rem;
-  margin-bottom:12px;
-}
-
-.lead{
-  font-size:1.05rem;
-  margin-bottom:22px;
-  color:#f8fafc;
-}
-
-.hero-actions{
-  display:flex;
-  gap:14px;
-  margin-bottom:18px;
-}
-
-.btn{
-  padding:12px 18px;
-  border-radius:10px;
-  font-weight:700;
-  cursor:pointer;
-  border:none;
-}
-
-.btn-gold{
-  background:var(--gold);
-  color:#000;
-}
-
-.btn-outline{
-  background:transparent;
-  border:2px solid rgba(255,255,255,0.5);
-  color:#fff;
-}
-
 /* --------------------
-   Hero Panel
+   Content / Cards
 -------------------- */
-.hero-panel{
-  background:#ffffff;
-  color:var(--ink);
-  padding:24px;
-  border-radius:16px;
-  box-shadow:var(--shadow);
-}
-
-.panel-badge{
-  display:inline-block;
-  background:#fef3c7;
-  color:#92400e;
-  padding:6px 12px;
-  border-radius:999px;
-  font-weight:700;
-  font-size:0.8rem;
-  margin-bottom:12px;
-}
-
-/* --------------------
-   Content Cards
--------------------- */
-.content{
-  padding:48px 0;
-}
+.content{padding:48px 0}
 
 .card{
   background:var(--paper);
@@ -217,23 +156,6 @@ body{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:32px;
-}
-
-/* --------------------
-   Services
--------------------- */
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
-  margin-top:20px;
-}
-
-.service{
-  background:#f9fafb;
-  padding:18px;
-  border-radius:12px;
-  border:1px solid #e5e7eb;
 }
 
 /* --------------------
@@ -256,15 +178,15 @@ body{
     grid-template-columns:1fr;
   }
 
+  /* Show hamburger */
   .mobile-menu{
     display:block;
     position:absolute;
     top:22px;
     right:24px;
-    z-index:1001;
-    color:#fff;
   }
 
+  /* Hide nav by default */
   .main-nav{
     display:none;
     position:absolute;
@@ -279,18 +201,20 @@ body{
     z-index:1000;
   }
 
+  /* Open state (JS toggles this) */
+  .main-nav.open{
+    display:flex;
+  }
+
   .main-nav a{
     color:var(--ink);
     padding:10px 12px;
     border-radius:8px;
+    text-decoration:none;
   }
 
   .main-nav a:hover{
     background:#f2f2f2;
-  }
-
-  .main-nav.open{
-    display:flex;
   }
 }
 

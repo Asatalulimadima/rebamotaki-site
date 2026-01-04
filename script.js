@@ -1,36 +1,41 @@
-// Mobile menu toggle
-document.addEventListener('DOMContentLoaded', function () {
+/* =========================================
+   Mobile Navigation + Contact Form
+========================================= */
 
-  // Main page menu button
-  const mainMenuBtn = document.getElementById('mobileMenuBtn');
-  if (mainMenuBtn) {
-    mainMenuBtn.addEventListener('click', () => {
-      const nav = document.querySelector('.main-nav');
-      if (nav) {
-        nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+document.addEventListener('DOMContentLoaded', () => {
+
+  const menuBtn = document.querySelector('.mobile-menu');
+  const nav = document.querySelector('.main-nav');
+
+  if (menuBtn && nav) {
+
+    // Toggle mobile menu
+    menuBtn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      menuBtn.classList.toggle('active');
+    });
+
+    // Close menu when a link is tapped
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuBtn.classList.remove('active');
+      });
+    });
+
+    // Reset menu on desktop resize
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 900) {
+        nav.classList.remove('open');
+        menuBtn.classList.remove('active');
       }
     });
   }
-
-  // Other pages mobile menu buttons (about, services, bbbee, iso, skills, contact)
-  const menuButtons = ['2', '3', '4', '5', '6', '7'];
-
-  menuButtons.forEach(num => {
-    const btn = document.getElementById('mobileMenuBtn' + num);
-    if (!btn) return;
-
-    btn.addEventListener('click', () => {
-      const nav = btn.parentElement.querySelector('.main-nav');
-      if (nav) {
-        nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-      }
-    });
-  });
-
 });
 
-
-// Contact form handler
+/* -------------------------
+   Contact Form Handler
+------------------------- */
 function handleContact(e) {
   e.preventDefault();
 
@@ -42,15 +47,21 @@ function handleContact(e) {
   const message = document.getElementById('message')?.value || '';
 
   if (!name || !email) {
-    document.getElementById('formResult').innerText = 'Please provide your name and email.';
+    document.getElementById('formResult').innerText =
+      'Please provide your name and email.';
     return false;
   }
 
-  const subject = encodeURIComponent(`Enquiry from ${company || name} — ${sector}`);
+  const subject = encodeURIComponent(
+    `Enquiry from ${company || name} — ${sector}`
+  );
+
   const body = encodeURIComponent(
     `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${message}`
   );
 
-  window.location.href = `mailto:hello@rebamotaki.co.za?subject=${subject}&body=${body}`;
+  window.location.href =
+    `mailto:hello@rebamotaki.co.za?subject=${subject}&body=${body}`;
+
   return false;
 }
