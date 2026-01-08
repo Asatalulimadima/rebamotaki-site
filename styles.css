@@ -1,5 +1,5 @@
 /* =========================================================
-   Premium Brochure Style — FIXED & MOBILE-SAFE
+   Premium Brochure Style — RESPONSIVE & SAFE
 ========================================================= */
 
 :root{
@@ -25,7 +25,15 @@
 /* --------------------
    Reset & Base
 -------------------- */
-*{box-sizing:border-box}
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   margin:0;
@@ -34,12 +42,17 @@ body{
   background:var(--bg);
   line-height:1.65;
   -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
 }
 
+/* --------------------
+   Layout Container
+-------------------- */
 .container{
+  width:100%;
   max-width:var(--container);
-  margin:auto;
-  padding:24px;
+  margin-inline:auto;
+  padding-inline:clamp(16px,4vw,24px);
 }
 
 /* --------------------
@@ -55,33 +68,36 @@ body{
 
 .hero-inner{
   display:flex;
-  justify-content:space-between;
   align-items:center;
-  gap:20px;
+  justify-content:space-between;
+  gap:16px;
+  min-height:80px;
 }
 
+/* Branding */
 .brand-left{
   display:flex;
   align-items:center;
-  gap:14px;
+  gap:12px;
 }
 
 .brand-logo{
-  width:70px;
-  height:70px;
+  width:56px;
+  height:56px;
   padding:8px;
   border-radius:12px;
   background:rgba(255,255,255,0.08);
+  flex-shrink:0;
 }
 
 .brand-title{
-  font-size:1.05rem;
+  font-size:clamp(0.95rem,2.5vw,1.05rem);
   font-weight:600;
   line-height:1.2;
 }
 
 .brand-sub{
-  font-size:0.85rem;
+  font-size:0.8rem;
   color:#e5e7eb;
 }
 
@@ -90,7 +106,7 @@ body{
 -------------------- */
 .main-nav{
   display:flex;
-  gap:14px;
+  gap:12px;
   align-items:center;
 }
 
@@ -100,6 +116,7 @@ body{
   padding:8px 12px;
   border-radius:8px;
   font-weight:500;
+  white-space:nowrap;
 }
 
 .nav-item:hover,
@@ -126,7 +143,7 @@ body{
   border:none;
   cursor:pointer;
   color:#fff;
-  z-index:1001;
+  z-index:1100;
 }
 
 /* --------------------
@@ -135,27 +152,29 @@ body{
 .hero-banner{
   display:grid;
   grid-template-columns:2fr 1fr;
-  gap:32px;
-  padding:48px 24px;
+  gap:clamp(20px,4vw,32px);
+  padding:clamp(32px,6vw,48px) 0;
 }
 
 /* --------------------
    Content / Cards
 -------------------- */
-.content{padding:48px 0}
+.content{
+  padding:clamp(32px,6vw,48px) 0;
+}
 
 .card{
   background:var(--paper);
   border-radius:16px;
-  padding:32px;
+  padding:clamp(20px,5vw,32px);
   margin-bottom:32px;
   box-shadow:var(--shadow);
 }
 
 .intro-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:32px;
+  grid-template-columns:repeat(2,1fr);
+  gap:clamp(20px,4vw,32px);
 }
 
 /* --------------------
@@ -165,43 +184,42 @@ body{
   background:#0f172a;
   color:#cbd5e1;
   padding:24px 0;
+  text-align:center;
 }
 
 /* =========================================================
-   MOBILE RESPONSIVE + NAV DROPDOWN
+   TABLET & MOBILE
 ========================================================= */
-@media (max-width:900px){
+@media (max-width: 900px){
 
   .hero-banner,
-  .intro-grid,
-  .section-row{
+  .intro-grid{
     grid-template-columns:1fr;
   }
 
-  /* Show hamburger */
+  /* Hamburger */
   .mobile-menu{
     display:block;
     position:absolute;
     top:22px;
-    right:24px;
+    right:20px;
   }
 
-  /* Hide nav by default */
+  /* Mobile nav dropdown */
   .main-nav{
     display:none;
     position:absolute;
-    top:70px;
-    right:20px;
+    top:80px;
+    right:16px;
     background:#ffffff;
     flex-direction:column;
-    width:220px;
+    width:min(90vw,260px);
     padding:16px;
     border-radius:14px;
     box-shadow:0 12px 30px rgba(0,0,0,.15);
     z-index:1000;
   }
 
-  /* Open state (JS toggles this) */
   .main-nav.open{
     display:flex;
   }
@@ -211,10 +229,30 @@ body{
     padding:10px 12px;
     border-radius:8px;
     text-decoration:none;
+    font-weight:500;
   }
 
   .main-nav a:hover{
     background:#f2f2f2;
+  }
+}
+
+/* =========================================================
+   SMALL PHONES (320px–375px)
+========================================================= */
+@media (max-width: 420px){
+
+  .brand-logo{
+    width:48px;
+    height:48px;
+  }
+
+  .brand-title{
+    font-size:0.95rem;
+  }
+
+  .hero-inner{
+    min-height:72px;
   }
 }
 
@@ -224,6 +262,5 @@ body{
 @media print{
   body{background:white;color:black}
   .hero-header{background:none;color:black;box-shadow:none}
-  .hero-panel{box-shadow:none}
-  .btn,.nav-cta,.mobile-menu{display:none}
+  .nav-cta,.mobile-menu{display:none}
 }
