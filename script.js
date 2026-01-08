@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggle mobile menu
     menuBtn.addEventListener('click', () => {
       nav.classList.toggle('open');
-      menuBtn.classList.toggle('active');
+      menuBtn.classList.toggle('active'); // optional styling for active
     });
 
     // Close menu when a link is tapped
