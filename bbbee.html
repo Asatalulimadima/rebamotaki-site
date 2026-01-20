@@ -1,50 +1,342 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>B-BBEE — RebaMotaki Consultants</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-BBEE Compliance Services - Rebamotaki Consultants</title>
+    <meta name="description" content="Professional B-BBEE compliance services to improve your Broad-Based Black Economic Empowerment score. Assessment, planning, implementation, and verification support.">
+    <meta name="keywords" content="B-BBEE compliance, BEE score improvement, Broad-Based Black Economic Empowerment, B-BBEE verification, BEE consulting South Africa">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/fix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
-
-<body class="brochure">
-  <header class="hero-header small">
-    <div class="hero-inner container">
-      <a href="index.html" class="brand-left"><img src="assets/image1.png" alt="logo" class="brand-logo"></a>
-      <button class="mobile-menu" id="mobileMenuBtn">☰</button>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="about.html" class="nav-item">About</a>
-        <a href="services.html" class="nav-item">Services</a>
-        <a href="image.html" class="nav-item">Gallery</a>
-        <a href="bbbee.html" class="nav-item">B-BBEE</a>
-        <a href="iso.html" class="nav-item">ISO</a>
-        <a href="skills.html" class="nav-item">Skills</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
-
-       </nav>
-
+<body>
+   <header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <img src="./images/logo (1).jpeg" alt="Rebamotaki Consultants Logo" class="logo-img">
+            <div class="logo-text">
+                <h1>REBAMOTAKI</h1>
+                <p>-CONSULTANTS-</p>
+            </div>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="iso.html">ISO Certification</a></li>
+                <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+                <li><a href="skills.html">Skills Development</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html" class="btn btn-primary">Get Quote</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
     </div>
-  </header>
+</header>
 
-  <main class="container content">
-    <section class="card">
-      <h1>B-BBEE Services</h1>
-      <p class=>A practical, four-step approach to improve your B-BBEE status and procurement positioning.</p>
-      <ol class=>
-        <li><strong>Assess:</strong> Current status, gaps, and opportunities.</li>
-        <li><strong>Plan:</strong> Tailored strategy aligned with business goals.</li>
-        <li><strong>Implement:</strong> Skills, supplier and EE initiatives.</li>
-        <li><strong>Prepare:</strong> Verification files and audit support.</li>
-      </ol>
-    </section>
-  </main>
+    <!-- Mobile Side Drawer -->
+    <div class="side-drawer" id="sideDrawer">
+        <button class="close-drawer" id="closeDrawer">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="drawer-logo">
+            <h2>REBAMOTAKI</h2>
+            <p>— CONSULTANTS —</p>
+        </div>
+        <ul class="drawer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="iso.html">ISO Certification</a></li>
+            <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+            <li><a href="skills.html">Skills Development</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html" class="drawer-cta">Get Quote</a></li>
+        </ul>
+    </div>
+    </header>
 
-  <footer class="site-footer">
-    <div class="container">© RebaMotaki Consultants</div>
-  </footer>
-  <script src="script.js"></script>
+    <div class="side-drawer" id="sideDrawer">
+        <button class="close-drawer" id="closeDrawer" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 1.5rem; color: var(--primary-color); cursor: pointer;">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="iso.html">ISO Certification</a></li>
+            <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+            <li><a href="skills.html">Skills Development</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html">Get Quote</a></li>
+        </ul>
+    </div>
+
+    <main class="main-content">
+        <h1 class="section-title">B-BBEE Compliance Services</h1>
+        
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <!-- Introduction -->
+            <div style="text-align: center; margin-bottom: 50px; padding: 0 20px;">
+                <p style="font-size: 1.2rem; color: var(--accent-color); max-width: 800px; margin: 0 auto 30px;">
+                    We simplify and support your B-BBEE journey with practical, results-driven solutions to improve your Broad-Based Black Economic Empowerment score and enhance your business competitiveness.
+                </p>
+            </div>
+            
+            <!-- B-BBEE Score Cards -->
+            <div style="background: var(--white); padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-bottom: 40px;">
+                <h2 style="color: var(--primary-color); text-align: center; margin-bottom: 40px;">B-BBEE Scorecard Elements</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-bottom: 30px;">
+                    <div style="padding: 25px; border: 1px solid #e2e8f0; border-radius: 8px; text-align: center;">
+                        <div style="width: 60px; height: 60px; background: #E91E63; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem;">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 10px;">Ownership (25 points)</h3>
+                        <p style="font-size: 0.9rem;">Black ownership and economic interest in the enterprise.</p>
+                        <div style="margin-top: 15px; padding: 8px 15px; background: #fce4ec; color: #E91E63; border-radius: 20px; font-weight: bold; display: inline-block;">
+                            Weight: 25%
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 25px; border: 1px solid #e2e8f0; border-radius: 8px; text-align: center;">
+                        <div style="width: 60px; height: 60px; background: #3F51B5; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 10px;">Management Control (19 points)</h3>
+                        <p style="font-size: 0.9rem;">Black representation in senior management and board positions.</p>
+                        <div style="margin-top: 15px; padding: 8px 15px; background: #e8eaf6; color: #3F51B5; border-radius: 20px; font-weight: bold; display: inline-block;">
+                            Weight: 19%
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 25px; border: 1px solid #e2e8f0; border-radius: 8px; text-align: center;">
+                        <div style="width: 60px; height: 60px; background: #4CAF50; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem;">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 10px;">Skills Development (25 points)</h3>
+                        <p style="font-size: 0.9rem;">Investment in development of black employees' skills.</p>
+                        <div style="margin-top: 15px; padding: 8px 15px; background: #e8f5e9; color: #4CAF50; border-radius: 20px; font-weight: bold; display: inline-block;">
+                            Weight: 25%
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 25px; border: 1px solid #e2e8f0; border-radius: 8px; text-align: center;">
+                        <div style="width: 60px; height: 60px; background: #FF9800; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem;">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 10px;">Enterprise & Supplier Development (44 points)</h3>
+                        <p style="font-size: 0.9rem;">Support for black-owned suppliers and enterprise development.</p>
+                        <div style="margin-top: 15px; padding: 8px 15px; background: #fff3e0; color: #FF9800; border-radius: 20px; font-weight: bold; display: inline-block;">
+                            Weight: 44%
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 25px; border: 1px solid #e2e8f0; border-radius: 8px; text-align: center;">
+                        <div style="width: 60px; height: 60px; background: #9C27B0; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem;">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 10px;">Socio-Economic Development (5 points)</h3>
+                        <p style="font-size: 0.9rem;">Contributions to socio-economic development initiatives.</p>
+                        <div style="margin-top: 15px; padding: 8px 15px; background: #f3e5f5; color: #9C27B0; border-radius: 20px; font-weight: bold; display: inline-block;">
+                            Weight: 5%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Our Services -->
+            <div style="background: var(--white); padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-bottom: 40px;">
+                <h2 style="color: var(--primary-color); text-align: center; margin-bottom: 40px;">Our B-BBEE Service Offering</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div style="padding: 30px; border-left: 5px solid var(--secondary-color); background: rgba(212, 175, 55, 0.05);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 40px; height: 40px; background: var(--secondary-color); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</span>
+                            Assess
+                        </h3>
+                        <p>We review your current B-BBEE status, identify gaps, and highlight opportunities for improvement through comprehensive analysis.</p>
+                        <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Current score assessment</li>
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Gap analysis</li>
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Opportunity identification</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="padding: 30px; border-left: 5px solid var(--secondary-color); background: rgba(212, 175, 55, 0.05);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 40px; height: 40px; background: var(--secondary-color); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</span>
+                            Plan
+                        </h3>
+                        <p>We develop a clear, tailored B-BBEE strategy to help you achieve your desired score and compliance goals with realistic timelines.</p>
+                        <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Customized B-BBEE strategy</li>
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Implementation roadmap</li>
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Priority action plan</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="padding: 30px; border-left: 5px solid var(--secondary-color); background: rgba(212, 175, 55, 0.05);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 40px; height: 40px; background: var(--secondary-color); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">3</span>
+                            Implement
+                        </h3>
+                        <p>We guide and support you in executing key initiatives such as skills development, employment equity, supplier development, and ownership solutions.</p>
+                        <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Skills development programs</li>
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Supplier development support</li>
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Ownership structure guidance</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="padding: 30px; border-left: 5px solid var(--secondary-color); background: rgba(212, 175, 55, 0.05);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 40px; height: 40px; background: var(--secondary-color); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">4</span>
+                            Prepare
+                        </h3>
+                        <p>We assist with all verification documentation, file preparation, and compliance evidence to ensure a smooth audit process.</p>
+                        <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Documentation preparation</li>
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Audit file compilation</li>
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Evidence gathering support</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="padding: 30px; border-left: 5px solid var(--secondary-color); background: rgba(212, 175, 55, 0.05);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 40px; height: 40px; background: var(--secondary-color); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">5</span>
+                            Support
+                        </h3>
+                        <p>We provide ongoing year-round advice, monitoring, and updates to keep you compliant and progressing toward your B-BBEE goals.</p>
+                        <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Ongoing compliance monitoring</li>
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Regular progress reviews</li>
+                            <li style="padding: 5px 0;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Legislative update alerts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Benefits Section -->
+            <div style="background: linear-gradient(135deg, var(--primary-color), #2d3748); color: white; padding: 50px 40px; border-radius: 10px; margin-bottom: 40px;">
+                <h2 style="color: white; text-align: center; margin-bottom: 40px;">Benefits of Improved B-BBEE Score</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                    <div style="text-align: center;">
+                        <div style="width: 70px; height: 70px; background: var(--secondary-color); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem;">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 style="color: white; margin-bottom: 15px;">Increased Business Opportunities</h3>
+                        <p>Access to government and corporate tenders that require specific B-BBEE levels.</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="width: 70px; height: 70px; background: var(--secondary-color); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem;">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 style="color: white; margin-bottom: 15px;">Enhanced Competitiveness</h3>
+                        <p>Better positioning in the market compared to competitors with lower B-BBEE scores.</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="width: 70px; height: 70px; background: var(--secondary-color); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem;">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 style="color: white; margin-bottom: 15px;">Improved Stakeholder Relations</h3>
+                        <p>Enhanced reputation with customers, suppliers, and the community.</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="width: 70px; height: 70px; background: var(--secondary-color); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem;">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3 style="color: white; margin-bottom: 15px;">Tax Incentives & Benefits</h3>
+                        <p>Potential tax benefits and incentives for improved B-BBEE performance.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 style="color: var(--primary-color); margin-bottom: 20px;">Improve Your B-BBEE Score Today</h2>
+                <p style="font-size: 1.1rem; color: var(--accent-color); max-width: 700px; margin: 0 auto 30px;">
+                    Contact us for a free B-BBEE assessment and discover how we can help you achieve a better score.
+                </p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="enquiry.html" class="cta-button" style="background: var(--secondary-color); color: var(--primary-color); text-decoration: none; padding: 15px 30px; border-radius: 5px; font-weight: bold;">
+                        Get Free Assessment
+                    </a>
+                    <a href="contact.html" class="cta-button" style="background: var(--primary-color); color: white; text-decoration: none; padding: 15px 30px; border-radius: 5px; font-weight: bold;">
+                        Contact Our Experts
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Rebamotaki Consultants</h3>
+                <p>Professional compliance solutions for businesses in Construction, ICT, and Transport sectors.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 79 299 5681</span>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@rebamotaki.co.za</span>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>403 Ben Viljoen Street, Pretoria North, 0182</span>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="iso.html">ISO Certification</a></li>
+                    <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+                    <li><a href="skills.html">Skills Development</a></li>
+                    <li><a href="enquiry.html">Free Consultation</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2024 Rebamotaki Consultants. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <script src="./Javascript/script.js"></script>
 </body>
-
 </html>

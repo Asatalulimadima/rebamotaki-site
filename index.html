@@ -1,130 +1,240 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>RebaMotaki Consultants — Premium Company Profile</title>
-  <meta name="description" content="RebaMotaki Consultants — Premium brochure style site for B-BBEE, ISO, Skills Development and Compliance." />
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebamotaki Consultants - Professional Compliance Solutions</title>
+    <meta name="description" content="RebaMotaki Consultants offers legal and regulatory compliance solutions for Construction, ICT, and Transport sectors. ISO certification, B-BBEE compliance, Skills Development.">
+    <meta name="keywords" content="compliance consultants, ISO certification, B-BBEE, skills development, regulatory compliance, South Africa">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="brochure">
-  <header class="hero-header">
-    <div class="hero-inner container">
-      <div class="brand-left">
-        <img src="assets/image1.png" alt="RebaMotaki logo" class="brand-logo">
-        <div>
-          <h1 class="brand-title">RebaMotaki Consultants</h1>
-          <p class="brand-sub">Compliance • B-BBEE • ISO • Skills Development</p>
-            <button class="mobile-menu" id="mobileMenuBtn">☰</button>
-
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">
+                   <img src="./images/logo (1).jpeg" alt="Rebamotaki Consultants Logo" class="logo-img">  
+                   <div class="logo-text">  
+                    <h1>REBAMOTAKI</h1>
+                    <p>-CONSULTANTS-</p>
+                </div>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="iso.html">ISO Certification</a></li>
+                    <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+                    <li><a href="skills.html">Skills Development</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enquiry.html" class="btn btn-primary">Get Quote</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-      </div>
+    </header>
 
-      <nav class="main-nav">
-  <a href="index.html" class="nav-item">Home</a>
-        <a href="about.html" class="nav-item">About</a>
-        <a href="services.html" class="nav-item">Services</a>
-        <a href="image.html" class="nav-item">Gallery</a>
-        <a href="bbbee.html" class="nav-item">B-BBEE</a>
-        <a href="iso.html" class="nav-item">ISO</a>
-        <a href="skills.html" class="nav-item">Skills</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
-
- </nav>
-
-
-    <div class="hero-banner container">
-      <div class="hero-copy">
-        <h2>Turning standards into achievement</h2>
-        <p class="lead">Premium, bespoke compliance and transformation services for Construction, ICT and Transport. We transform regulatory complexity into strategic advantage — audit-ready, elegant, and practical.</p>
-        <div class="hero-actions">
-          <a class="btn btn-gold" href="contact.html">Request a Premium Consultation</a>
-          <button class="btn btn-outline" onclick="window.print()">Save as PDF</button>
+    <!-- Mobile Side Drawer -->
+    <div class="side-drawer" id="sideDrawer">
+        <button class="close-drawer" id="closeDrawer">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="drawer-logo">
+            <h2>REBAMOTAKI</h2>
+            <p>-CONSULTANTS-</p>
         </div>
-        <p class="muted">Head Office: 403 Ben Viljoen Street, Pretoria North • +27 79 299 5681</p>
-      </div>
-      <div class="hero-panel">
-        <div class="panel-inner">
-          <div class="panel-badge">Premium Services</div>
-          <h3>ISO · B-BBEE · Skills</h3>
-          <p class="muted small">Trusted across 9 provinces • Tailored for measurable results</p>
-          <div class="contact-mini">
-            <div class="phone">+27 79 299 5681</div>
-            <a href="mailto:hello@rebamotaki.co.za" class="muted small">hello@rebamotaki.co.za</a>
-          </div>
-        </div>
-      </div>
+        <ul class="drawer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="iso.html">ISO Certification</a></li>
+            <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+            <li><a href="skills.html">Skills Development</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html" class="drawer-cta">Get Quote</a></li>
+        </ul>
     </div>
-  </header>
 
-  <main class="container content">
-    <section class="card intro-card">
-      <div class="intro-grid">
-        <div>
-          <h3>About Our Approach</h3>
-          <p class="muted">We combine legal expertise, operational practicality and premium delivery to make compliance an asset rather than a cost. Designed for boards, executives, and compliance teams.</p>
-        </div>
-        <div>
-          <h3>Who we serve</h3>
-          <p class="muted">Construction • Information & Communications Technology (ICT) • Transport</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="card services-snapshot">
-      <h3>Featured Services</h3>
-      <div class="services-grid">
-        <article class="service">
-          <h4>ISO Certification</h4>
-          <p class="muted small">Gap analysis, documentation, internal audits and certification readiness (9001, 14001, 45001, 27001).</p>
-        </article>
-        <article class="service">
-          <h4>B-BBEE & Transformation</h4>
-          <p class="muted small">Strategy, implementation and verification preparation for improved procurement outcomes.</p>
-        </article>
-        <article class="service">
-          <h4>Skills & SETA</h4>
-          <p class="muted small">WSP/ATR management, mandatory/discretionary grant recovery, and training delivery coordination.</p>
-        </article>
-        <article class="service">
-          <h4>Compliance Advisory</h4>
-          <p class="muted small">Sector-specific regulatory guidance and legal-risk reduction.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="card ceo-message">
-      <div class="section-row">
-        <div class="col">
-          <h3>CEO Message</h3>
-          <p class="muted">“Compliance is not just about rules. It’s about building better businesses and creating real opportunities.”</p>
-          <p class="small">— CEO</p>
-        </div>
-        <div class="col right">
-          <h4>Company Snapshot</h4>
-          <table class="info-table">
-            <tr><th>Head Office</th><td>403 Ben Viljoen St, Pretoria North</td></tr>
-            <tr><th>Employees</th><td>6+</td></tr>
-            <tr><th>Clients</th><td>~20 across 9 provinces</td></tr>
-            <tr><th>Sectors</th><td>Construction · ICT · Transport</td></tr>
-          </table>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
+    <!-- Hero Section -->
+    <!-- Home Hero Section -->
+<section class="hero home-hero">
     <div class="container">
-      <div class="footer-row">
-        <div>© RebaMotaki Consultants</div>
-        <div class="muted">403 Ben Viljoen Street, Pretoria North • +27 79 299 5681 • hello@rebamotaki.co.za</div>
-      </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Turning Standards into <span class="orange-text">Achievement</span></h1>
+            <p class="hero-text">Specialized legal and regulatory compliance solutions for Construction, ICT, Security and General sectors in South Africa.</p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-text">Clients Nationwide</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-text">Expert Consultants</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-text">Compliance Focus</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-primary">Get Free Consultation</a>
+                <a href="services.html" class="btn btn-secondary">Our Services</a>
+            </div>
+        </div>
     </div>
-  </footer>
+</section>
 
-  <script src="script.js"></script>
+    <!-- About Preview -->
+    <section class="section about-preview">
+        <div class="container">
+            <h2 class="section-title">About RebaMotaki Consultants</h2>
+            <p class="section-subtitle">Building trust, mitigating risk, and achieving long-term operational success through compliance.</p>
+            <div class="about-content">
+                <p>We are a specialized consulting firm offering legal and regulatory compliance solutions to businesses in the Construction, ICT, and Transport sectors. In today's dynamic regulatory environment, staying compliant isn't just about avoiding penalties—it's about building trust, mitigating risk, and achieving long-term operational success.</p>
+                <a href="about.html" class="btn btn-outline mt-40">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="section services-preview bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Professional Services</h2>
+            <p class="section-subtitle">Integrated compliance solutions tailored to your business needs.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="service-title">ISO Certification</h3>
+                    <p class="service-desc">9001, 14001, 45001, 27001 standards with end-to-end implementation support.</p>
+                    <a href="iso.html" class="orange-text">Learn more →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">B-BBEE Compliance</h3>
+                    <p class="service-desc">Complete B-BBEE strategy, implementation, and verification support.</p>
+                    <a href="bbbee.html" class="orange-text">Learn more →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="service-title">Skills Development</h3>
+                    <p class="service-desc">SETA compliance, WSP/ATR submissions, and levy management.</p>
+                    <a href="skills.html" class="orange-text">Learn more →</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- CEO Message -->
+<section class="section ceo-section">
+    <div class="container">
+        <div class="ceo-container">
+            <div class="ceo-image">
+                <!-- Replace the placeholder with actual image -->
+                <img src="./images/ceo.png" alt="Mudau Hudivha - CEO of Rebamotaki Consultants" class="ceo-photo">
+            </div>
+            <div class="ceo-content">
+                <h2 class="section-title">Message from Our <span class="orange-text">CEO</span></h2>
+                <blockquote class="ceo-quote">
+                    "Compliance is not just about rules. It's about building better businesses and creating real opportunities."
+                </blockquote>
+                <p class="ceo-name orange-text">— Mudau Hudivha</p>
+                <p class="ceo-bio">CEO and Founder with over five years of expertise in BBBEE, ISO standards, and Skills Development.</p>
+                <a href="about.html" class="btn btn-outline">Read Full Profile</a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Achieve Compliance Excellence?</h2>
+            <p class="cta-text">Let's work together to ensure your business meets the highest international standards.</p>
+            <a href="contact.html" class="btn btn-secondary">Schedule Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Rebamotaki Consultants</h3>
+                    <p>Professional compliance solutions for businesses in Construction, ICT, and Transport sectors across South Africa.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <span>+27 79 702 6887
+
+                        </span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@rebamotaki.co.za</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Pretoria, South Africa</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="iso.html">ISO Certification</a></li>
+                        <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+                        <li><a href="skills.html">Skills Development</a></li>
+                        <li><a href="enquiry.html">Free Consultation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Rebamotaki Consultants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Javascript/script.js"></script>
 </body>
 </html>
-
-
-

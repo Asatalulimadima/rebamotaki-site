@@ -1,60 +1,299 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Services — RebaMotaki Consultants</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Rebamotaki Consultants</title>
+    <meta name="description" content="Professional compliance services including ISO certification, B-BBEE compliance, skills development, and regulatory consulting for businesses in South Africa.">
+    <meta name="keywords" content="ISO certification services, B-BBEE compliance, skills development, compliance consulting, regulatory services">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body class="brochure">
-  <header class="hero-header small">
-    <div class="hero-inner container">
-      <a href="index.html" class="brand-left">
-        <img src="assets/image1.png" alt="logo" class="brand-logo">
-        <button class="mobile-menu" id="mobileMenuBtn">☰</button>
-      </a>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="about.html" class="nav-item">About</a>
-        <a href="services.html" class="nav-item">Services</a>
-        <a href="image.html" class="nav-item">Gallery</a>
-        <a href="bbbee.html" class="nav-item">B-BBEE</a>
-        <a href="iso.html" class="nav-item">ISO</a>
-        <a href="skills.html" class="nav-item">Skills</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
-
-       </nav>
-
+<body>
+    <!-- Header -->
+ <header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <img src="./images/logo (1).jpeg" alt="Rebamotaki Consultants Logo" class="logo-img">
+            <div class="logo-text">
+                <h1>REBAMOTAKI</h1>
+                <p>-CONSULTANTS-</p>
+            </div>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="iso.html">ISO Certification</a></li>
+                <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+                <li><a href="skills.html">Skills Development</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html" class="btn btn-primary">Get Quote</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
     </div>
-  </header>
+</header>
 
-  <main class="container content">
-    <section class="card">
-      <h1>Our Services</h1>
+    <!-- Mobile Side Drawer -->
+    <div class="side-drawer" id="sideDrawer">
+        <button class="close-drawer" id="closeDrawer">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="drawer-logo">
+            <h2>REBAMOTAKI</h2>
+            <p>-CONSULTANTS-</p>
+        </div>
+        <ul class="drawer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="iso.html">ISO Certification</a></li>
+            <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+            <li><a href="skills.html">Skills Development</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html" class="drawer-cta">Get Quote</a></li>
+        </ul>
+    </div>
 
-      <h2>ISO Certification</h2>
-      <p class=>Full support for ISO 9001, ISO 14001, ISO 45001 and ISO 27001 — from gap analysis, documentation and
-        training to internal audits and certification readiness.</p>
-
-      <h2>B-BBEE & Transformation</h2>
-      <p class=>Assessments, strategy and implementation across Employment Equity, Skills Development and Supplier
-        Development to improve procurement outcomes.</p>
-
-      <h2>Skills Development & SETA</h2>
-      <p class=>WSP/ATR preparation, mandatory grant recovery and discretionary grant applications, plus training
-        coordination and monitoring.</p>
-
-      <h2>Compliance & Advisory</h2>
-      <p class=>Targeted legal and regulatory advice tailored to Construction, ICT and Transport sectors.</p>
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9));">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Our <span class="orange-text">Professional Services</span></h1>
+                <p class="hero-text">Integrated compliance solutions for Construction, ICT, Security and General sectors. We help your business meet all regulatory requirements efficiently and effectively.</p>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">© RebaMotaki Consultants</div>
-  </footer>
-  <script src="script.js"></script>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- ISO Certification Services -->
+            <section class="section">
+                <div class="service-card">
+                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+                        <div class="service-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div>
+                            <h2 class="section-title" style="text-align: left; margin-bottom: 10px;">ISO Certification Services</h2>
+                            <p class="section-subtitle" style="text-align: left; margin-bottom: 0;">Achieve and maintain international standards excellence</p>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-bottom: 30px; font-size: 1.1rem;">
+                        Achieve international recognition and improve your business processes with our comprehensive ISO certification services. We guide you through every step of the certification process.
+                    </p>
+                    
+                    <div class="services-grid">
+                        <div class="service-card" style="border: 1px solid #e2e8f0;">
+                            <h3 class="service-title"><i class="fas fa-check-circle orange-text" style="margin-right: 10px;"></i> ISO 9001</h3>
+                            <p>Quality Management System certification to improve customer satisfaction and operational efficiency. Enhance your quality control processes.</p>
+                        </div>
+                        
+                        <div class="service-card" style="border: 1px solid #e2e8f0;">
+                            <h3 class="service-title"><i class="fas fa-check-circle orange-text" style="margin-right: 10px;"></i> ISO 14001</h3>
+                            <p>Environmental Management System for sustainable business practices and regulatory compliance. Reduce your environmental impact.</p>
+                        </div>
+                        
+                        <div class="service-card" style="border: 1px solid #e2e8f0;">
+                            <h3 class="service-title"><i class="fas fa-check-circle orange-text" style="margin-right: 10px;"></i> ISO 45001</h3>
+                            <p>Occupational Health and Safety Management System for workplace safety and risk reduction. Protect your employees and business.</p>
+                        </div>
+                        
+                        <div class="service-card" style="border: 1px solid #e2e8f0;">
+                            <h3 class="service-title"><i class="fas fa-check-circle orange-text" style="margin-right: 10px;"></i> ISO 27001</h3>
+                            <p>Information Security Management System for data protection and cybersecurity compliance. Secure your sensitive information.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center" style="margin-top: 40px;">
+                        <a href="iso.html" class="btn btn-primary">Learn More About ISO Certification</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- B-BBEE Compliance Services -->
+            <section class="section">
+                <div class="service-card">
+                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h2 class="section-title" style="text-align: left; margin-bottom: 10px;">B-BBEE Compliance Services</h2>
+                            <p class="section-subtitle" style="text-align: left; margin-bottom: 0;">Broad-Based Black Economic Empowerment</p>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-bottom: 30px; font-size: 1.1rem;">
+                        Simplify and optimize your B-BBEE journey with our comprehensive compliance services. We help you achieve the best possible score while supporting transformation goals.
+                    </p>
+                    
+                    <div class="services-grid">
+                        <div class="service-card" style="border: 1px solid #e2e8f0;">
+                            <div class="service-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3 class="service-title">Assess</h3>
+                            <p>Review current B-BBEE status, identify gaps, and highlight opportunities for improvement.</p>
+                        </div>
+                        
+                        <div class="service-card" style="border: 1px solid #e2e8f0;">
+                            <div class="service-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3 class="service-title">Plan</h3>
+                            <p>Develop tailored B-BBEE strategy to achieve your desired score and compliance goals.</p>
+                        </div>
+                        
+                        <div class="service-card" style="border: 1px solid #e2e8f0;">
+                            <div class="service-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3 class="service-title">Implement</h3>
+                            <p>Guide execution of skills development, employment equity, and supplier development initiatives.</p>
+                        </div>
+                        
+                        <div class="service-card" style="border: 1px solid #e2e8f0;">
+                            <div class="service-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3 class="service-title">Verify</h3>
+                            <p>Prepare all verification documentation and support for smooth B-BBEE audit process.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center" style="margin-top: 40px;">
+                        <a href="bbbee.html" class="btn btn-primary">Learn More About B-BBEE</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Development Services -->
+            <section class="section">
+                <div class="service-card">
+                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h2 class="section-title" style="text-align: left; margin-bottom: 10px;">Skills Development Services</h2>
+                            <p class="section-subtitle" style="text-align: left; margin-bottom: 0;">SETA Compliance & Training Management</p>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-bottom: 30px; font-size: 1.1rem;">
+                        Maximize your skills development benefits and ensure compliance with SETA requirements. We help you optimize your training investments and recover Skills Development Levy funds.
+                    </p>
+                    
+                    <div class="services-grid">
+                        <div class="service-card" style="border: 1px solid #e2e8f0;">
+                            <h3 class="service-title"><i class="fas fa-tasks orange-text" style="margin-right: 10px;"></i> Skills Development Management</h3>
+                            <p>Planning and coordinating all training initiatives to meet organizational and compliance needs.</p>
+                            <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                                <li><i class="fas fa-check orange-text" style="margin-right: 10px;"></i> WSP preparation</li>
+                                <li><i class="fas fa-check orange-text" style="margin-right: 10px;"></i> ATR submission</li>
+                                <li><i class="fas fa-check orange-text" style="margin-right: 10px;"></i> Training needs analysis</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-card" style="border: 1px solid #e2e8f0;">
+                            <h3 class="service-title"><i class="fas fa-hand-holding-usd orange-text" style="margin-right: 10px;"></i> Grant Management</h3>
+                            <p>Managing applications to recover Skills Development Levy funds and access training grants.</p>
+                            <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                                <li><i class="fas fa-check orange-text" style="margin-right: 10px;"></i> Mandatory grant applications</li>
+                                <li><i class="fas fa-check orange-text" style="margin-right: 10px;"></i> Discretionary grant submissions</li>
+                                <li><i class="fas fa-check orange-text" style="margin-right: 10px;"></i> Skills Development Levy recovery</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center" style="margin-top: 40px;">
+                        <a href="skills.html" class="btn btn-primary">Learn More About Skills Development</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="container">
+                    <h2 class="cta-title">Ready to Transform Your Business?</h2>
+                    <p class="cta-text">Contact us today for a free consultation and discover how our compliance solutions can help your business succeed.</p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                        <a href="enquiry.html" class="btn btn-primary">Get Free Quote</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Rebamotaki Consultants</h3>
+                    <p>Professional compliance solutions for businesses in Construction, ICT, and Transport sectors.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <span>+27 79 702 6887</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@rebamotaki.co.za</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Pretoria, South Africa</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="iso.html">ISO Certification</a></li>
+                        <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+                        <li><a href="skills.html">Skills Development</a></li>
+                        <li><a href="enquiry.html">Free Consultation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Rebamotaki Consultants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Javascript/script.js"></script>
 </body>
-
 </html>

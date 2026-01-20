@@ -1,46 +1,352 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Skills Development — RebaMotaki Consultants</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Development Services - Rebamotaki Consultants</title>
+    <meta name="description" content="Professional skills development services including SETA compliance, WSP/ATR submissions, training program management, and B-BBEE skills development solutions.">
+    <meta name="keywords" content="skills development, SETA compliance, WSP submission, ATR submission, training programs, skills development levy, B-BBEE skills">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/fix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body class="brochure">
-  <header class="hero-header small">
-    <div class="hero-inner container">
-      <a href="index.html" class="brand-left"><img src="assets/image1.png" alt="logo" class="brand-logo"></a>
-      <button class="mobile-menu" id="mobileMenuBtn">☰</button>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="about.html" class="nav-item">About</a>
-        <a href="services.html" class="nav-item">Services</a>
-        <a href="image.html" class="nav-item">Gallery</a>
-        <a href="bbbee.html" class="nav-item">B-BBEE</a>
-        <a href="iso.html" class="nav-item">ISO</a>
-        <a href="skills.html" class="nav-item">Skills</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
-
-
-       </nav>
-
+<body>
+    <header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <img src="./images/logo (1).jpeg" alt="Rebamotaki Consultants Logo" class="logo-img">
+            <div class="logo-text">
+                <h1>REBAMOTAKI</h1>
+                <p>-CONSULTANTS-</p>
+            </div>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="iso.html">ISO Certification</a></li>
+                <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+                <li><a href="skills.html">Skills Development</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html" class="btn btn-primary">Get Quote</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
     </div>
-  </header>
+</header> 
 
-  <main class="container content">
-    <section class="card">
-      <h1>Skills Development & SETA</h1>
-      <p class=>WSP & ATR submissions, mandatory grant recovery and discretionary grant support. We coordinate training,
-        evidence collection and reporting to meet SETA and B-BBEE requirements.</p>
-    </section>
-  </main>
+    <div class="side-drawer" id="sideDrawer">
+        <button class="close-drawer" id="closeDrawer" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 1.5rem; color: var(--primary-color); cursor: pointer;">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="iso.html">ISO Certification</a></li>
+            <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+            <li><a href="skills.html">Skills Development</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html">Get Quote</a></li>
+        </ul>
+    </div>
 
-  <footer class="site-footer">
-    <div class="container">© RebaMotaki Consultants</div>
-  </footer>
-  <script src="script.js"></script>
+    <main class="main-content">
+        <h1 class="section-title">Skills Development Services</h1>
+        
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <!-- Introduction -->
+            <div style="text-align: center; margin-bottom: 50px; padding: 0 20px;">
+                <p style="font-size: 1.2rem; color: var(--accent-color); max-width: 800px; margin: 0 auto 30px;">
+                    We help organizations meet SETA and B-BBEE requirements through comprehensive skills development planning, implementation, and management services.
+                </p>
+            </div>
+            
+            <!-- Services Overview -->
+            <div style="background: var(--white); padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-bottom: 40px;">
+                <h2 style="color: var(--primary-color); text-align: center; margin-bottom: 40px;">Our Skills Development Services</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div style="padding: 30px; border: 1px solid #e2e8f0; border-radius: 8px; text-align: center; transition: var(--transition);">
+                        <div style="width: 70px; height: 70px; background: var(--primary-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem;">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px;">Skills Development Management</h3>
+                        <p style="margin-bottom: 20px;">Planning and coordinating all training initiatives to meet organizational and regulatory requirements.</p>
+                        <ul style="list-style: none; padding: 0; text-align: left;">
+                            <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">
+                                <i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                                Training needs analysis
+                            </li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">
+                                <i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                                Skills development planning
+                            </li>
+                            <li style="padding: 8px 0;">
+                                <i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                                Training program coordination
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div style="padding: 30px; border: 1px solid #e2e8f0; border-radius: 8px; text-align: center; transition: var(--transition);">
+                        <div style="width: 70px; height: 70px; background: var(--primary-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem;">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px;">WSP & ATR Submission</h3>
+                        <p style="margin-bottom: 20px;">Preparing and submitting your Workplace Skills Plan and Annual Training Report to SETA.</p>
+                        <ul style="list-style: none; padding: 0; text-align: left;">
+                            <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">
+                                <i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                                WSP preparation & submission
+                            </li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">
+                                <i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                                ATR compilation & submission
+                            </li>
+                            <li style="padding: 8px 0;">
+                                <i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                                SETA compliance monitoring
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div style="padding: 30px; border: 1px solid #e2e8f0; border-radius: 8px; text-align: center; transition: var(--transition);">
+                        <div style="width: 70px; height: 70px; background: var(--primary-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem;">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px;">Grant Management</h3>
+                        <p style="margin-bottom: 20px;">Managing applications to recover Skills Development Levy funds and secure discretionary grants.</p>
+                        <ul style="list-style: none; padding: 0; text-align: left;">
+                            <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">
+                                <i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                                Mandatory grant applications
+                            </li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">
+                                <i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                                Discretionary grant submissions
+                            </li>
+                            <li style="padding: 8px 0;">
+                                <i class="fas fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                                Levy recovery optimization
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SETA Compliance -->
+            <div style="background: linear-gradient(135deg, var(--primary-color), #2d3748); color: white; padding: 50px 40px; border-radius: 10px; margin-bottom: 40px;">
+                <h2 style="color: white; text-align: center; margin-bottom: 40px;">SETA Compliance Support</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                    <div style="text-align: center; padding: 25px;">
+                        <div style="width: 60px; height: 60px; background: var(--secondary-color); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.5rem;">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 style="color: white; margin-bottom: 15px;">Sector Alignment</h3>
+                        <p>Identify your relevant SETA and ensure compliance with sector-specific requirements.</p>
+                    </div><!DOCTYPE html>
+
+            
+            <!-- B-BBEE Skills Development -->
+            <div style="background: var(--white); padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-bottom: 40px;">
+                <h2 style="color: var(--primary-color); text-align: center; margin-bottom: 40px;">B-BBEE Skills Development Benefits</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div style="padding: 25px; background: #e8f5e9; border-radius: 8px;">
+                        <h3 style="color: #2e7d32; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-chart-line" style="color: #2e7d32;"></i>
+                            Score Improvement
+                        </h3>
+                        <p>Skills Development contributes up to 25 points on your B-BBEE scorecard, making it one of the most significant elements.</p>
+                        <div style="margin-top: 15px; padding: 10px; background: white; border-radius: 5px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                <span>B-BBEE Points Available:</span>
+                                <span style="font-weight: bold; color: #2e7d32;">25 points</span>
+                            </div>
+                            <div style="height: 10px; background: #e0e0e0; border-radius: 5px; overflow: hidden;">
+                                <div style="width: 100%; height: 100%; background: #2e7d32;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 25px; background: #e3f2fd; border-radius: 8px;">
+                        <h3 style="color: #1565c0; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-money-bill-wave" style="color: #1565c0;"></i>
+                            Financial Benefits
+                        </h3>
+                        <p>Recover up to 20% of your Skills Development Levy through mandatory grants and access additional funding through discretionary grants.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
+                            <div style="text-align: center; padding: 10px; background: white; border-radius: 5px;">
+                                <div style="font-size: 1.5rem; font-weight: bold; color: #1565c0;">20%</div>
+                                <div style="font-size: 0.9rem;">Mandatory Grant Recovery</div>
+                            </div>
+                            <div style="text-align: center; padding: 10px; background: white; border-radius: 5px;">
+                                <div style="font-size: 1.5rem; font-weight: bold; color: #1565c0;">50-100%</div>
+                                <div style="font-size: 0.9rem;">Discretionary Grant Coverage</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 25px; background: #f3e5f5; border-radius: 8px;">
+                        <h3 style="color: #7b1fa2; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-users" style="color: #7b1fa2;"></i>
+                            Employee Development
+                        </h3>
+                        <p>Invest in your workforce to improve productivity, retention, and create a skilled team that drives business growth.</p>
+                        <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                            <li style="padding: 8px 0; border-bottom: 1px solid #e1bee7;">
+                                <i class="fas fa-check-circle" style="color: #7b1fa2; margin-right: 10px;"></i>
+                                Improved employee retention
+                            </li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid #e1bee7;">
+                                <i class="fas fa-check-circle" style="color: #7b1fa2; margin-right: 10px;"></i>
+                                Enhanced productivity
+                            </li>
+                            <li style="padding: 8px 0;">
+                                <i class="fas fa-check-circle" style="color: #7b1fa2; margin-right: 10px;"></i>
+                                Succession planning
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Process Timeline -->
+            <div style="background: var(--white); padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-bottom: 40px;">
+                <h2 style="color: var(--primary-color); text-align: center; margin-bottom: 40px;">Annual Skills Development Process</h2>
+                
+                <div style="position: relative; padding: 20px 0;">
+                    <!-- Timeline line -->
+                    <div style="position: absolute; top: 50%; left: 0; right: 0; height: 3px; background: #e2e8f0; transform: translateY(-50%); z-index: 1;"></div>
+                    
+                    <div style="display: flex; justify-content: space-between; position: relative; z-index: 2;">
+                        <div style="text-align: center; flex: 1;">
+                            <div style="width: 50px; height: 50px; background: var(--primary-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; border: 5px solid var(--light-bg);">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 5px;">April - June</h4>
+                            <p style="font-size: 0.9rem;">Training Needs Analysis</p>
+                        </div>
+                        
+                        <div style="text-align: center; flex: 1;">
+                            <div style="width: 50px; height: 50px; background: var(--primary-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; border: 5px solid var(--light-bg);">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 5px;">June - August</h4>
+                            <p style="font-size: 0.9rem;">WSP Preparation</p>
+                        </div>
+                        
+                        <div style="text-align: center; flex: 1;">
+                            <div style="width: 50px; height: 50px; background: var(--primary-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; border: 5px solid var(--light-bg);">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 5px;">September</h4>
+                            <p style="font-size: 0.9rem;">WSP Submission to SETA</p>
+                        </div>
+                        
+                        <div style="text-align: center; flex: 1;">
+                            <div style="width: 50px; height: 50px; background: var(--primary-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; border: 5px solid var(--light-bg);">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 5px;">January - March</h4>
+                            <p style="font-size: 0.9rem;">ATR Preparation & Submission</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 style="color: var(--primary-color); margin-bottom: 20px;">Optimize Your Skills Development Strategy</h2>
+                <p style="font-size: 1.1rem; color: var(--accent-color); max-width: 300px; margin: 0 auto 30px;">
+                    Let us help you maximize your B-BBEE points and recover your Skills Development Levy through professional skills development management.
+                </p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="enquiry.html" class="cta-button" style="background: var(--secondary-color); color: var(--primary-color); text-decoration: none; padding: 15px 30px; border-radius: 5px; font-weight: bold;">
+                        Start Your Skills Plan
+                    </a>
+                    <a href="contact.html" class="cta-button" style="background: var(--primary-color); color: white; text-decoration: none; padding: 15px 30px; border-radius: 5px; font-weight: bold;">
+                        Schedule Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Rebamotaki Consultants</h3>
+                <p>Professional compliance solutions for businesses in Construction, ICT, Security and General sectors.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 79 299 5681</span>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@rebamotaki.co.za</span>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>403 Ben Viljoen Street, Pretoria North, 0182</span>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="iso.html">ISO Certification</a></li>
+                    <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+                    <li><a href="skills.html">Skills Development</a></li>
+                    <li><a href="enquiry.html">Free Consultation</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2024 Rebamotaki Consultants. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./Javascript/script.js"></script>
 </body>
-
 </html>
+                    
+                    <div style="text-align: center; padding: 25px;">
+                        <div style="width: 60px; height: 60px; background: var(--secondary-color); color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.5rem;">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 style="color: white; margin-bottom: 15px;">Deadline Management</h3>
+                        <p>Ensure timely submission of all required documents to avoid penalties and missed opportunities.</p>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 25px;">
+                        <div style="width: 60px; height: 60

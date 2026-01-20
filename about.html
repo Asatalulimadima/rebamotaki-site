@@ -1,66 +1,381 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About — RebaMotaki Consultants</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Rebamotaki Consultants</title>
+    <meta name="description" content="Learn about Rebamotaki Consultants, our mission, vision, CEO, and company values. Professional compliance consulting services for Construction, ICT, and Transport sectors.">
+    <meta name="keywords" content="about rebamotaki, compliance consulting, company profile, mission vision, company values, ISO certification experts, B-BBEE compliance">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body class="brochure">
-  <header class="hero-header small">
-    <div class="hero-inner container">
-      <a href="index.html" class="brand-left">
-        <img src="assets/image1.png" alt="RebaMotaki logo" class="brand-logo">
-        <button class="mobile-menu" id="mobileMenuBtn">☰</button>
-      </a>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="about.html" class="nav-item">About</a>
-        <a href="services.html" class="nav-item">Services</a>
-        <a href="image.html" class="nav-item">Gallery</a>
-        <a href="bbbee.html" class="nav-item">B-BBEE</a>
-        <a href="iso.html" class="nav-item">ISO</a>
-        <a href="skills.html" class="nav-item">Skills</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
-
-       </nav>
-
+<body>
+    <!-- Header -->
+    <header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <img src="./images/logo (1).jpeg" alt="Rebamotaki Consultants Logo" class="logo-img">
+            <div class="logo-text">
+                <h1>REBAMOTAKI</h1>
+                <p>-CONSULTANTS-</p>
+            </div>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="iso.html">ISO Certification</a></li>
+                <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+                <li><a href="skills.html">Skills Development</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html" class="btn btn-primary">Get Quote</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
     </div>
-  </header>
+</header>
 
-  <main class="container content">
-    <section class="card">
-      <h1>About RebaMotaki Consultants</h1>
-      <p class=>RebaMotaki Consultants is a Pretoria-based compliance consultancy offering legal and regulatory
-        compliance solutions with a premium, practical approach.</p>
+    <!-- Mobile Side Drawer -->
+    <div class="side-drawer" id="sideDrawer">
+        <button class="close-drawer" id="closeDrawer">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="drawer-logo">
+            <h2>REBAMOTAKI</h2>
+            <p>-CONSULTANTS-</p>
+        </div>
+        <ul class="drawer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="iso.html">ISO Certification</a></li>
+            <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+            <li><a href="skills.html">Skills Development</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html" class="drawer-cta">Get Quote</a></li>
+        </ul>
+    </div>
 
-      <h2>CEO Message</h2>
-      <blockquote class=>“Compliance is not just about rules. It’s about building better businesses and creating real
-        opportunities.”</blockquote>
+   <!-- Hero Section with Staff Background -->
+<section class="hero about-hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">About <span class="orange-text">Our Team</span></h1>
+            <p class="hero-text">Meet the dedicated professionals behind Rebamotaki Consultants. Our team combines expertise, passion, and commitment to deliver exceptional compliance solutions.</p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-text">Expert Consultants</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-text">Successful Clients</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-text">Years Combined Experience</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="#team" class="btn btn-primary">
+                    <i class="fas fa-users" style="margin-right: 10px;"></i>
+                    Meet Our Team
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <i class="fas fa-handshake" style="margin-right: 10px;"></i>
+                    Work With Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-      <h2>Mission & Vision</h2>
-      <p class=><strong>Mission:</strong> Help businesses meet legal and compliance requirements in a simple, effective
-        way.<br>
-        <strong>Vision:</strong> To be the trusted compliance partner in South Africa for sectors that drive the
-        economy.
-      </p>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Company Introduction -->
+            <section class="section">
+                <h2 class="section-title">Who We Are</h2>
+                <div class="info-card">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+                        <div>
+                            <p style="margin-bottom: 20px; line-height: 1.7; font-size: 1.1rem;">
+                                <strong class="orange-text">RebaMotaki Consultants</strong> is a specialized consulting firm offering legal and regulatory compliance solutions to businesses in the Construction, ICT, Security and General sectors. In today's dynamic regulatory environment, staying compliant isn't just about avoiding penalties—it's about building trust, mitigating risk, and achieving long-term operational success.
+                            </p>
+                            <p style="margin-bottom: 20px; line-height: 1.7; font-size: 1.1rem;">
+                                We help our clients do exactly that. With a team of seasoned legal experts, compliance consultants, and industry advisors, we deliver actionable, sector-specific guidance that ensures your operations meet local, national, and international regulatory standards.
+                            </p>
+                            <p style="line-height: 1.7; font-size: 1.1rem;">
+                                We currently operate from our head office in Pretoria with a dedicated team of over 6 professionals. We proudly serve approximately 20 clients operating across diverse industries throughout all 9 provinces in South Africa.
+                            </p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="image-placeholder" style="width: 300px; height: 300px; margin: 0 auto; background: linear-gradient(135deg, #1a365d, #2d3748); color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 30px;">
+                                <i class="fas fa-building" style="font-size: 4rem; margin-bottom: 15px; color: #ff6b35;"></i>
+                                <h3 style="color: white; margin: 10px 0 5px;">Head Office</h3>
+                                <p style="color: #ff6b35; margin: 0;">Pretoria, South Africa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <h2>Values</h2>
-      <ul class=>
-        <li>Integrity & Transparency</li>
-        <li>Quality Excellence</li>
-        <li>Client-Centric Approach</li>
-        <li>Continual Improvement</li>
-      </ul>
-    </section>
-  </main>
+            <!-- Stats Section -->
+            <section class="section">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="stat-number">6+</div>
+                        <h3 class="service-title">Expert Employees</h3>
+                    </div>
+                    <div class="service-card">
+                        <div class="stat-number">20+</div>
+                        <h3 class="service-title">Active Clients</h3>
+                    </div>
+                    <div class="service-card">
+                        <div class="stat-number">9</div>
+                        <h3 class="service-title">Provinces Covered</h3>
+                    </div>
+                    <div class="service-card">
+                        <div class="stat-number">4</div>
+                        <h3 class="service-title">Core Services</h3>
+                    </div>
+                </div>
+            </section>
 
-  <footer class="site-footer">
-    <div class="container">© RebaMotaki Consultants</div>
-  </footer>
-  <script src="script.js"></script>
+            <!-- Mission & Vision -->
+            <section class="section">
+                <h2 class="section-title">Our Mission & Vision</h2>
+                <div class="services-grid">
+                    <div class="service-card" style="border-top: 4px solid #ff6b35;">
+                        <div class="service-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="service-title">Our Mission</h3>
+                        <p style="color: var(--text-color); line-height: 1.7;">
+                            To help businesses in the Construction, ICT, and Transport industries meet legal and compliance requirements in a simple, professional, and effective way. We aim to support growth, promote fairness, and improve business standards through expert advice and practical solutions.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card" style="border-top: 4px solid #ff6b35;">
+                        <div class="service-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="service-title">Our Vision</h3>
+                        <p style="color: var(--text-color); line-height: 1.7;">
+                            To be a trusted and leading compliance consulting partner in South Africa, known for helping businesses stay legally compliant, competitive, and socially responsible.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CEO Section -->
+            <section class="section ceo-section">
+                <div class="container">
+                    <h2 class="section-title">Leadership & Expertise</h2>
+                    <div class="ceo-container">
+                        <div class="ceo-image">
+                            <div class="image-placeholder" style="width: 250px; height: 250px; background: linear-gradient(135deg, #1a365d, #2d3748);">
+                                <i class="fas fa-user-tie" style="font-size: 4rem; color: #ff6b35;"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="ceo-content">
+                            <h3 class="ceo-name orange-text">Mudau Hudivha</h3>
+                            <p class="ceo-bio" style="color: var(--medium-gray); font-style: italic; margin-bottom: 20px;">Chief Executive Officer & Founder</p>
+                            
+                            <blockquote class="ceo-quote">
+                                "Compliance is not just about rules. It's about building better businesses and creating real opportunities for growth and success."
+                            </blockquote>
+                            
+                            <p style="margin-bottom: 20px; line-height: 1.6;">
+                                Hudivha has over five years of experience helping businesses meet legal and compliance requirements, especially in BBBEE, ISO standards, and Skills Development. He has worked with many companies in the Construction, ICT, and Transport sectors, helping them follow the law, improve their business processes, and grow in a way that is fair and sustainable.
+                            </p>
+                            
+                            <p style="margin-bottom: 40px; line-height: 1.6;">
+                                He is passionate about making compliance simple and useful. Hudivha believes that following the rules should not just be about avoiding penalties—it should help businesses become stronger and more successful.
+                            </p>
+                            
+                            <a href="contact.html" class="btn btn-outline">Contact Our CEO</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Company Values -->
+            <section class="section">
+                <h2 class="section-title">Our Company Values</h2>
+                <p class="section-subtitle">These core values guide everything we do and form the foundation of our client relationships.</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="service-title">Integrity & Transparency</h3>
+                        <p>We operate with honesty and uphold the highest ethical standards in every client engagement.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="service-title">Quality Excellence</h3>
+                        <p>We are committed to delivering consistent, high-quality services that reflect the very standards we help our clients achieve.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="service-title">Client-Centric Approach</h3>
+                        <p>Our clients' success is our success. We prioritize their needs and tailor our services to ensure real, measurable value.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="service-title">Continuous Improvement</h3>
+                        <p>We embrace the ISO philosophy of continual improvement—both internally and for our clients—striving for better performance every day.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="service-title">Competence & Expertise</h3>
+                        <p>Our consultants bring deep knowledge and up-to-date understanding of international standards to provide reliable, expert guidance.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3 class="service-title">Confidentiality & Trust</h3>
+                        <p>We respect the confidentiality of our clients' information and build long-term relationships based on trust.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us -->
+            <section class="cta-section">
+                <div class="container">
+                    <h2 class="cta-title">Why Choose Rebamotaki Consultants?</h2>
+                    
+                    <div class="services-grid" style="margin-top: 40px;">
+                        <div class="service-card" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
+                            <div class="service-icon" style="color: white;">
+                                <i class="fas fa-check-double"></i>
+                            </div>
+                            <h3 class="service-title" style="color: white;">Comprehensive Expertise</h3>
+                            <p style="color: rgba(255, 255, 255, 0.9);">Integrated support across ISO standards, B-BBEE compliance, and Skills Development, ensuring your organisation meets all regulatory requirements.</p>
+                        </div>
+                        
+                        <div class="service-card" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
+                            <div class="service-icon" style="color: white;">
+                                <i class="fas fa-user-cog"></i>
+                            </div>
+                            <h3 class="service-title" style="color: white;">Tailored Solutions</h3>
+                            <p style="color: rgba(255, 255, 255, 0.9);">Customized strategies designed around your business needs—no generic templates. Realistic, cost-effective solutions aligned with your goals.</p>
+                        </div>
+                        
+                        <div class="service-card" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
+                            <div class="service-icon" style="color: white;">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3 class="service-title" style="color: white;">End-to-End Support</h3>
+                            <p style="color: rgba(255, 255, 255, 0.9);">Guidance through every step—from assessments and planning to implementation, documentation, and audit support.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="section">
+                <div class="text-center">
+                    <h2 class="section-title">Partner With Us Today</h2>
+                    <p class="section-subtitle">Let us help you navigate the complex world of compliance and achieve your business goals with confidence.</p>
+                    <div class="hero-buttons" style="margin-top: 30px;">
+                        <a href="enquiry.html" class="btn btn-primary">
+                            <i class="fas fa-handshake" style="margin-right: 10px;"></i>
+                            Start Partnership
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
+                            Contact Our Team
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Rebamotaki Consultants</h3>
+                    <p>Professional compliance solutions for businesses in Construction, ICT, Security and General sectors across South Africa.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <span>+27 79 702 6887</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@rebamotaki.co.za</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Pretoria, South Africa</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="iso.html">ISO Certification</a></li>
+                        <li><a href="bbbee.html">B-BBEE Compliance</a></li>
+                        <li><a href="skills.html">Skills Development</a></li>
+                        <li><a href="enquiry.html">Free Consultation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Rebamotaki Consultants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Javascript/script.js"></script>
 </body>
-
 </html>
