@@ -2,37 +2,45 @@
    Mobile Navigation + Contact Form
 ========================================= */
 
+/* =========================================
+   Mobile Navigation (FIXED)
+========================================= */
+
 document.addEventListener('DOMContentLoaded', () => {
 
-  const menuBtn = document.querySelector('.mobile-menu');
-  const nav = document.querySelector('.main-nav');
+  const menuBtn = document.querySelector('.menu-toggle');
+  const drawer = document.querySelector('.side-drawer');
+  const closeBtn = document.querySelector('.close-drawer');
 
-  if (menuBtn && nav) {
+  if (menuBtn && drawer) {
 
-    // Toggle mobile menu
+    // Open drawer
     menuBtn.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      menuBtn.classList.toggle('active'); // optional styling for active
+      drawer.classList.add('active');
     });
 
-    // Close menu when a link is tapped
-    nav.querySelectorAll('a').forEach(link => {
+    // Close drawer (X button)
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        drawer.classList.remove('active');
+      });
+    }
+
+    // Close when clicking any link
+    drawer.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        nav.classList.remove('open');
-        menuBtn.classList.remove('active');
+        drawer.classList.remove('active');
       });
     });
 
-    // Reset menu on desktop resize
+    // Close if screen resized to desktop
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 900) {
-        nav.classList.remove('open');
-        menuBtn.classList.remove('active');
+      if (window.innerWidth > 992) {
+        drawer.classList.remove('active');
       }
     });
   }
 });
-
 /* -------------------------
    Contact Form Handler
 ------------------------- */
